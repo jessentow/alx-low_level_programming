@@ -1,5 +1,4 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
 /**
  * _memset - Fill the portion of the memory area pointed to by s
