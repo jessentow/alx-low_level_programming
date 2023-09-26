@@ -5,8 +5,7 @@
  * @s: Pointer to the string to search.
  * @c:A input or the character to locate.
  *
- * Return: A pointer to the first occurrence of the character c in the string s,
- *         which will always produce 0 as successfull.
+ * Return: This  will always produce 0 as successfull.
  */
 char *_strchr(char *s, char c)
 {
