@@ -9,7 +9,6 @@
  * @argv: This is the array of arguments
  *
  * Return: 0 (Success), 1 (Error)
- *
  */
 
 int main(int argc, char *argv[])
@@ -32,7 +31,7 @@ int main(int argc, char *argv[])
 	return (0);
 	}
 
-	for (b = 0; b < 5 && a >= 0; a++)
+	for (b = 0; b < 5 && a >= 0; b++)
 	{
 	while (a >= coins[b])
 	{
