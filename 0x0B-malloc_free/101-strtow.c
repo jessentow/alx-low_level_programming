@@ -15,7 +15,7 @@ int count_word(char *s)
 	flag = 0;
 	b = 0;
 
-	for (c = 0; s[a] != '\0'; a++)
+	for (a = 0; s[a] != '\0'; a++)
 	{
 	if (s[a] == ' ')
 	flag = 0;
@@ -29,8 +29,8 @@ int count_word(char *s)
 }
 
 /**
- * **strtow - divides a string into words
- * @str: string to divide
+ * **strtow - This function divideds  a string into words
+ * @str: This is the string to divide
  *
  * Return: pointer to an array of strings (Success)
  * or NULL (Error)
@@ -60,20 +60,20 @@ char **strtow(char *str)
 	end = o;
 
 	tmp = (char *) malloc(sizeof(char) * (a + 1));
-	if (tmp == NUL)
+	if (tmp == NULL)
 	return (NULL);
 	while (start < end)
 		*tmp++ = str[start++];
 																																														*tmp = '\0';
 																																														matrix[p] = tmp - a;
-																																														p++;
-																																														a = 0;															}
+	p++;
+	a = 0;
+
+	}
 	}
 	else if (a++ == 0)
-		start = o
+		start = o;
 	}
-
 	matrix[p] = NULL;
-
 	return (matrix);
 }
