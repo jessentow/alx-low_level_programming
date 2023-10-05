@@ -29,8 +29,8 @@ int count_word(char *s)
 }
 
 /**
- * **strtow - splits a string into words
- * @str: string to split
+ * **strtow - divides a string into words
+ * @str: string to divide
  *
  * Return: pointer to an array of strings (Success)
  * or NULL (Error)
@@ -39,7 +39,7 @@ int count_word(char *s)
 char **strtow(char *str)
 {
 	char **matrix, *tmp;
-	int i, k = 0, len = 0, words, c = 0, start, end;
+	int o, p = 0, len = 0, words, a = 0, start, end;
 
 	while (*(str + len))
 	len++;
@@ -51,29 +51,29 @@ char **strtow(char *str)
 	if (matrix == NULL)
 	return (NULL);
 
-	for (i = 0; i <= len; i++)
+	for (o = 0; o <= len; o++)
 	{
-	if (str[i] == ' ' || str[i] == '\0')
+	if (str[o] == ' ' || str[o] == '\0')
 	{
-	if (c)
+	if (a)
 	{
-	end = i;
+	end = o;
 
-	tmp = (char *) malloc(sizeof(char) * (c + 1));
+	tmp = (char *) malloc(sizeof(char) * (a + 1));
 	if (tmp == NUL)
 	return (NULL);
 	while (start < end)
 		*tmp++ = str[start++];
 																																														*tmp = '\0';
-																																														matrix[k] = tmp - c;
-																																														k++;
-																																														c = 0;															}
+																																														matrix[p] = tmp - a;
+																																														p++;
+																																														a = 0;															}
 	}
-	else if (c++ == 0)
-		start = i
+	else if (a++ == 0)
+		start = o
 	}
 
-	matrix[k] = NULL;
+	matrix[p] = NULL;
 
 	return (matrix);
 }
