@@ -11,7 +11,7 @@
 
 int _atoi(char *s)
 {
-	int a, r, o, length, k, numbers;
+	int a, r, o, length, k, nums;
 
 	a = 0;
 	r = 0;
@@ -20,7 +20,7 @@ int _atoi(char *s)
 	k = 0;
 	nums = 0;
 
-	while (s[lenght] != '\0')
+	while (s[length] != '\0')
 	length++;
 
 	while (a < length && k == 0)
@@ -32,14 +32,15 @@ int _atoi(char *s)
 	{
 	nums = s[a] - '0';
 	if (r % 2)
-		nums = -nums;
-		o = o * 10 + nums
-		k = 1;
+	nums = -nums;
+	o = o * 10 + nums;
+	k = 1;
+
 	if (s[a + 1] < '0' || s[a + 1] > '9')
 	break;
 																						k = 0;
 																						}
-	i++;
+	a++;
 	}
 
 	if (k == 0)
