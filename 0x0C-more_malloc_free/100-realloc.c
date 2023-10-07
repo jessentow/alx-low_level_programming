@@ -4,14 +4,16 @@
 #include <string.h>
 
 /*
- * _realloc - Reallocates a memory block.
+ **_realloc - Reallocates a memory block.
  * @ptr: Pointer to the previously allocated memory.
- * @old_size: The size, in bytes, of the allocated space for ptr.
+ * @old_size: The size, in bytes, of the allocated space
+ * for ptr.
  * @new_size: The new size, in bytes, of the memory block.
  *
  * Return: A pointer to the newly allocated memory block,
  *         or NULL on failure or if new_size is zero.
- **/
+ */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *ptr1;
