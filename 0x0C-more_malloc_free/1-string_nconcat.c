@@ -3,11 +3,12 @@
 
 /**
  **string_nconcat - concatenates n bytes of a string to another string
- * @s1: string to append to
- * @s2: string to concatenate from
+ * @s1: first string to append to
+ * @s2: Second string to concatenate from
  * @n: number of bytes from s2 to concatenate to s1
  *
- * Return: pointer to the resulting string
+ * Return: A pointer to the newly allocated concatenated string,
+ *        or NULL on failure
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
