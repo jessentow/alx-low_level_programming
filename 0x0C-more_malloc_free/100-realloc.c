@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include "main.h"
 
-/*
- **_realloc - Reallocates a memory block.
+ /*
+ * _realloc : This reallocates a memory block.
+ * *_realloc: This reallocates a memory block.
  * @ptr: Pointer to the previously allocated memory.
  * @old_size: The size, in bytes, of the allocated space
  * for ptr.
@@ -12,8 +13,9 @@
  *         or NULL on failure or if new_size is zero.
  */
 
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 {
+
 	char *ptr1;
 	char *old_ptr;
 	unsigned int a;
