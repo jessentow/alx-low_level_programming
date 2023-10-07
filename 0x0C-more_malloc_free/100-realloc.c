@@ -12,7 +12,7 @@
  * Return: A pointer to the newly allocated memory block,
  *         or NULL on failure or if new_size is zero.
  **/
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *ptr1;
 	char *old_ptr;
