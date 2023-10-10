@@ -12,7 +12,7 @@
  * name, age, and owner. It is used to represent the struct dog
  */
 
-struct dog
+void main(struct dog);
 {
 	char *name;
 	float age;
