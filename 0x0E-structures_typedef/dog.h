@@ -2,13 +2,14 @@
 #define DOG_H
 #include <stdio.h>
 
-/*
- * struct dog - Represents information about a dog
+/**
+ * struct dog - a dog's basic info
  * @name: The name of the dog
  * @age: The age of the dog
- * @owner: The owner of the dog
+ * @owner: The owner
+ *
+ * Description: Longer description
  */
-
 struct dog
 {
 	char *name;
