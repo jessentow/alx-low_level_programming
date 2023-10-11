@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "dog.h"
+#include <stdlib.h>
 
 /**
- * print_dog - Prints the details of a struct dog
+ * print_dog - Prints the details of
+ *a struct dog
  * @d:A pointer to the  struct dog
  */
 
@@ -18,4 +20,3 @@ void print_dog(struct dog *d)
 
 	printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
 }
-
