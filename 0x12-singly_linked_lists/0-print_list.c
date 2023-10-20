@@ -7,9 +7,9 @@
  *
  * Description: This function prints all the elements of a linked list.
  *              If the string within a node is NULL, it prints "[0] (nil)"
- * @parameter: This becomes the paramenter
  *
- * Return: This will return the number of nodes
+ *
+ * Return: This will return the number of nodes (size_t)
  */
 
 size_t print_list(const list_t *h)
@@ -22,10 +22,6 @@ size_t print_list(const list_t *h)
 	printf("[0] (nil)\n");
 	else
 	printf("[%u] %s\n", h->len, h->str);
-
 	++counter;
 	h = h->next;
-	}
-
-	return (counter);
 }
