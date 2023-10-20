@@ -2,8 +2,13 @@
 #include "lists.h"
 
 /*
- * print_list - Print all the elements of a list_t list.s
+ * print_list -this will print all the elements of a list.
  * @h: This becomes the linked list to print
+ *
+ * Description: This function prints all the elements of a linked list.
+ *              If the string within a node is NULL, it prints "[0] (nil)"
+ * @parameter: This becomes the paramenter
+ *
  * Return: This will return the number of nodes
  */
 
