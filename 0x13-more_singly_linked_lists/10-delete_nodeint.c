@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /*
- * delete_nodeint_at_index - This functions deletes the
+ * delete_nodeint_at_index - This functions deletes a
  * nth node of a linked list.
  * @head: Thsi si the linked list to print
  * @index: index of the node to be deleted. Index starts at 0.
