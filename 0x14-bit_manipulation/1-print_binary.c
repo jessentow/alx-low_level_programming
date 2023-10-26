@@ -8,22 +8,22 @@
 
 void print_binary(unsigned long int n)
 {
-	int number = 0;
-	unsigned long int avail = n;
+	int a = 0;
+	unsigned long int e = n;
 
-	while (avail)
+	while (e)
 	{
-	avail = avail >> 1;
-	number++;
+	e = e >> 1;
+	a++;
 	}
 
-	if (!number)
+	if (!a)
 	putchar('0');
 
-	while (number)
+	while (a)
 	{
-	avail = n >> --avail;
-	if (avail & 1)
+	e = n >> --a;
+	if (e & 1)
 	putchar('1');
 	else
 	putchar('0');
