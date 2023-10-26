@@ -1,11 +1,15 @@
 #include "main.h"
 
 /*
- * clear_bit -  find the value of a bit at a given index.
- * @n: decimal number
+ * clear_bit - This function int finds  the value of
+ * a bit at a given index
+ * @n:The decimal number
  * @index: index starting from 0 of the bit you want to get
  *
- * Return: value of a bit
+ * Description : This clear_bit function finds the value of
+ * a bit at a given index
+ *
+ * Return: Thsi will return the value of a bit
  */
 
 int clear_bit(unsigned long int *n, unsigned int index)
