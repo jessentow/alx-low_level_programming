@@ -1,13 +1,17 @@
 #include "lists.h"
 
 /*
- * find_listint_loop - This will  find the loop
- * in a linked list
  * @head: THis is the linked list to search for
  *
- * Return: This will returnaddress of the node
+ * find_listint_loop - This function finds the loop
+ *                    in a linked list
+ * Return: This will return address of the node
  * where the loop starts, or NULL
+ *
+ * Description: This is the function that finds a
+ * loop in a linked list.
  */
+
 listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *slow = head;
