@@ -2,13 +2,13 @@
 
 /**
  * read_textfile - This will read the text file and print it
- * 		to the POSIX standard output
+ * to the POSIX standard output
  *
  * @filename: This becomes the  name of the file that will be read
  * @letters:  The count of letters to read and print
  *
  * Return: This will return the number of letters printed,
- * 	or 0 if it failed
+ * or 0 if it failed
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
